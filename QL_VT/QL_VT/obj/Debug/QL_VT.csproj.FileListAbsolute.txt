@@ -19,7 +19,6 @@ F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\Microsoft.ReportViewer.Win
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\Microsoft.SqlServer.Types.dll
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\EnvDTE.dll
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\stdole.dll
-F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\EnvDTE.xml
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
@@ -68,3 +67,15 @@ F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.KhachHang.resources
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.NhaCungCap.resources
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.NhanVien.resources
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.TaiKhoan.resources
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\Microsoft.MSXML.dll
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.ChiTietPhieuNhap.resources
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.ChiTietPhieuXuat.resources
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.HangHoa.resources
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.LoaiHang.resources
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.PhieuNhap.resources
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.PhieuXuat.resources
