@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using QL_VT.Class;
 using System.Data.SqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Runtime.Remoting.Contexts;
 
 namespace QL_VT
 {
@@ -19,7 +21,6 @@ namespace QL_VT
         public TaiKhoan()
         {
             InitializeComponent();
-
         }
         void loadCBLoai()
         {
@@ -50,32 +51,18 @@ namespace QL_VT
             dataGridView1.ReadOnly = true;
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
-            //luu();
-        }
-        private void TaiKhoan_Load(object sender, EventArgs e)
-        {
-            
-            btnThem.Enabled = true;
-            Functions.Connect();
-            LoadDuLieuDataG();
-            loadCBLoai();
-            Databingding(ds.Tables["Data"]);
         }
 
-        private void btnThoat_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void btnSua_Click(object sender, EventArgs e)
+        private void btnThem_Click(object sender, EventArgs e)
         {
             dataGridView1.ReadOnly = false;
+            dataGridView1.AllowUserToAddRows = true;
+            btnLuu.Enabled = btnSua.Enabled = btnXoa.Enabled = true;
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
-                dataGridView1.Rows[i].ReadOnly = false;
-            dataGridView1.Columns[0].ReadOnly = true;
-            dataGridView1.AllowUserToAddRows = false;
-            btnLuu.Enabled = true;
-            btnSua.Enabled = btnXoa.Enabled = false;
+            {
+                dataGridView1.Rows[i].ReadOnly = true;
+            }
+            dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.Rows.Count - 1;
         }
 
         private void btnXoa_Click(object sender, EventArgs e)
@@ -113,19 +100,16 @@ namespace QL_VT
             }
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        private void btnSua_Click(object sender, EventArgs e)
         {
             dataGridView1.ReadOnly = false;
-            dataGridView1.AllowUserToAddRows = true;
-            btnLuu.Enabled = btnSua.Enabled = btnXoa.Enabled = true;
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
-            {
-                dataGridView1.Rows[i].ReadOnly = true;
-            }
-            dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.Rows.Count - 1;
+                dataGridView1.Rows[i].ReadOnly = false;
+            dataGridView1.Columns[0].ReadOnly = true;
+            dataGridView1.AllowUserToAddRows = false;
+            btnLuu.Enabled = true;
+            btnSua.Enabled = btnXoa.Enabled = false;
         }
-
-        
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
@@ -139,5 +123,21 @@ namespace QL_VT
             dataGridView1.AllowUserToAddRows = false;
             btnSua.Enabled = btnXoa.Enabled = false;
         }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void TaiKhoan_Load(object sender, EventArgs e)
+        {
+            btnLuu.Enabled = btnSua.Enabled = btnXoa.Enabled = false;
+            btnThem.Enabled = true;
+            Functions.Connect();
+            LoadDuLieuDataG();
+            loadCBLoai();
+            Databingding(ds.Tables["Data"]);
+        }
     }
 }
+

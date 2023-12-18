@@ -19,19 +19,12 @@ namespace QL_VT
         const int heightOfButtons = 42;
         string TenUser = "", MatKhau = "";
         int Quyen = 0;
-        public frmMain()
+        public frmMain(string TenUser, string MatKhau, int Quyen)
         {
             InitializeComponent();
             this.TenUser = TenUser;
             this.MatKhau = MatKhau;
             this.Quyen = Quyen;
-        }
-
-
-        private void frmMain1_Load(object sender, EventArgs e)
-        {
-            pnlCenter.AutoScroll = true;
-            btnRpTypeProduct.Text = "Hàng hóa";
         }
         private Form activeForm = null;
         private void openFormChill(Form chill)
@@ -46,8 +39,8 @@ namespace QL_VT
             chill.MaximumSize = new Size(815, Height);
             chill.FormBorderStyle = FormBorderStyle.None;
             chill.Dock = DockStyle.Fill;
-            pnlForm.Controls.Add(chill);
-            pnlForm.Tag = chill;
+            pnlMain.Controls.Add(chill);
+            pnlMain.Tag = chill;
             chill.BringToFront();
             chill.Show();
         }
@@ -141,6 +134,7 @@ namespace QL_VT
 
         private void btnListAccount_Click(object sender, EventArgs e)
         {
+
             if (Quyen != 0)
             {
                 openFormChill(new TaiKhoan());

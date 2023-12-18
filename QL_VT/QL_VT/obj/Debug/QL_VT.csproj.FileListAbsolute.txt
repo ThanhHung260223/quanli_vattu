@@ -79,3 +79,4 @@ F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.HangHoa.resources
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.LoaiHang.resources
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.PhieuNhap.resources
 F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\obj\Debug\QL_VT.PhieuXuat.resources
+F:\12DHTH11\HK5\.NET\DO_AN\QLVT\QL_VT\QL_VT\bin\Debug\EnvDTE.xml

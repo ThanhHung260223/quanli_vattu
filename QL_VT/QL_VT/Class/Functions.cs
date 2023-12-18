@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Runtime.Remoting.Contexts;
 
 namespace QL_VT.Class
 {
@@ -43,9 +44,6 @@ namespace QL_VT.Class
                 con = null;
             }
         }
-
-        //
-
         // phương thức thực thi câu lệnh select dữ liệu
         public static DataTable GetDataTable(string str)
         {
